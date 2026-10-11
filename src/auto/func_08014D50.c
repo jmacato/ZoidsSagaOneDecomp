@@ -1,0 +1,8 @@
+#include "m2c.h"
+
+M2C_UNK func_0800802C();
+
+void func_08014D50(void)
+{
+    func_0800802C();
+}

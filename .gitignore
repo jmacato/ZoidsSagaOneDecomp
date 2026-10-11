@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.gba
+*.nds
+*.sav
+*.bin
+*.elf
+*.o
+*.i
+*.sqlite
+*.sqlite-*
+*.rar

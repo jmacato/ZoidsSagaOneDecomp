@@ -1,0 +1,6 @@
+#include "m2c.h"
+
+void func_0800BD20(void)
+{
+
+}

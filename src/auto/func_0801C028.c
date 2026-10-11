@@ -1,0 +1,83 @@
+#include "m2c.h"
+
+extern u8 D_02000000[];
+extern u8 D_02000B54[];
+extern u8 D_08669748[];
+extern u8 D_08669784[];
+
+M2C_UNK func_08000BD8(s32, s32);
+M2C_UNK func_080014A8(s32, M2C_UNK);
+M2C_UNK func_080019B4(s32);
+M2C_UNK func_08001A08(s32);
+M2C_UNK func_08003D78(s32, M2C_UNK);
+M2C_UNK func_08003DD8(s32);
+M2C_UNK func_08007188(s32, s32, s32, M2C_UNK);
+M2C_UNK func_080076C0(s32, s32, s32, s32, s32);
+M2C_UNK func_080089A0(s32, s32);
+M2C_UNK func_08008B58(s32);
+M2C_UNK func_08008B70(s32, s32, s32);
+M2C_UNK func_08011E08();
+M2C_UNK func_08011E24();
+M2C_UNK func_08011F18(s32, s32, s32, s32, s32, s32);
+M2C_UNK func_0805EE78(s32);
+
+void func_0801C028(void)
+{
+    func_0805EE78(0x20);
+    func_08003D78(4, 0x0801C2BD);
+    func_08003D78(5, 0x0801C2D9);
+    func_08011F18(4, 0x90, 0x30, 0x10, 1, 1);
+    func_08008B58(0x18D);
+    func_08003D78(4, 0x0801C2F5);
+    func_08011F18(4, 0x90, 0xC0, 0x10, 1, 1);
+    func_08008B70(4, 0xFF, 0xFF);
+    func_08011F18(2, 0x80, 0x30, 0x10, 1, 1);
+    func_08000BD8(3, 0);
+    func_08008B58(0x18E);
+    func_08011F18(2, 0x80, 0xC0, 0x10, 1, 1);
+    func_08008B70(2, 0xFF, 0xFF);
+    func_08008B58(0x18F);
+    func_08011E08();
+    func_080076C0(0xD5, 0xA, 0xB, 3, D_08669748);
+    func_08008B70(0, 0xFF, 0xFF);
+    func_08011E24();
+    func_08011F18(2, 0x80, 0xD0, 0x10, 2, 1);
+    func_08011F18(2, 0xA0, 0xD0, 0x10, 2, 1);
+    func_08000BD8(3, 0);
+    func_0805EE78(0x3C);
+    func_08001A08(4);
+    *(s16 *)D_02000B54 = 0;
+    func_080019B4(4);
+    func_08008B58(0x190);
+    func_08011F18(1, 0xA0, 0xC0, 0x10, 2, 1);
+    func_08011F18(1, 0xD0, 0xC0, 0x10, 2, 1);
+    func_08008B70(1, 0xFF, 0xFF);
+    func_08011E08();
+    func_080076C0(0xD6, 2, 5, 4, D_08669784);
+    func_08011E24();
+    func_08003D78(4, 0x0801C31D);
+    func_0805EE78(0x3C);
+    func_08008B70(3, 0xE, 2);
+    func_08011F18(3, 0x50, 0x20, 0x10, 1, 1);
+    func_08011F18(3, 0x50, 0x30, 0x10, 1, 1);
+    func_08000BD8(4, 1);
+    func_08000BD8(1, 0);
+    func_08008B58(0x191);
+    func_080089A0(1, 0x98);
+    func_08000BD8(1, 3);
+    func_08011F18(0, 0x20, 0x40, 0x10, 1, 0);
+    func_08011F18(1, 0x10, 0x40, 0x10, 1, 1);
+    func_08011F18(1, 0x20, 0x40, 0x10, 1, 1);
+    func_08008B70(1, 0xFF, 0xFF);
+    func_08011F18(2, 0x20, 0x30, 0x10, 1, 1);
+    func_08011F18(2, 0x20, 0x40, 0x10, 1, 1);
+    func_08008B70(2, 0xFF, 0xFF);
+    func_08011F18(3, 0x20, 0x30, 0x10, 1, 1);
+    func_08011F18(3, 0x20, 0x40, 0x10, 1, 1);
+    func_08008B70(3, 0xFF, 0xFF);
+    func_08011E08();
+    *(s32 *)D_02000000 = 0x08008025;
+    func_08003DD8(3);
+    func_08007188(0xD6, 2, 4, 0xFFFF);
+    func_080014A8(1, 0x0800BEA5);
+}
